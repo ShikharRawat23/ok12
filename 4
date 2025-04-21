@@ -1,0 +1,16 @@
+ import 'package:flutter/material.dart';
+  
+  void main() => runApp(MaterialApp(home: MyIcons()));
+  
+  class MyIcons extends StatelessWidget {
+    @override
+    Widget build(BuildContext context) {
+      return Scaffold(
+        appBar: AppBar(title: Text('Icons/Images')),
+        body: Column(children: [
+          Icon(Icons.star, size: 50),
+          Image.network('https://via.placeholder.com/100'),
+        ]),
+      );
+    }
+  }
